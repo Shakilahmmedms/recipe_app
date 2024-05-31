@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <!-- this is tailwind css CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- This is header Section -->
+    <header>
+      <nav class="navbar">
+        <div class="left_nav">
+          <h1 class="text-2xl font-bold text-red-600">My Recipe App</h1>
+        </div>
+        <div class="right_nav">
+          <ul class="nav_items">
+            <li><a class="hover:text-red-600" href="index.html">Home</a></li>
+            <li><a class="hover:text-red-600" href="#">About us</a></li>
+            <li><a class="hover:text-red-600" href="#">Contact </a></li>
+            <li><a class="hover:text-red-600" href="login.html">Login</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- This is main tag -->
+    <main>
+      <div class="flex justify-center items-center h-full w-full mb-20">
+        <form action="" class="mt-24 bg-gray-900 p-12 mb-6 rounded-lg">
+          <h1 class="text-3xl font-bold text-center my-8 text-white">Please login</h1>
+          <div>
+            <label class="block mb-2 text-white" for="email">Enter Your Email : </label>
+            <input
+              class="border-2 border-black p-4 w-96 rounded-lg"
+              type="email"
+              name="email"
+              placeholder="Email"
+            />
+          </div>
+          <div class="mt-4">
+            <label class="block mb-2 text-white" for="email">Enter Your Password : </label>
+            <input
+              class="border-2 border-black p-4 w-96 rounded-lg"
+              type="password"
+              name="password"
+              placeholder="Password"
+            />
+          </div>
+          <div class="mt-6">
+            <input class="btn bg-red-600 py-4 px-4 text-white w-full rounded-lg" type="submit" name="submit" >
+          </div>
+        </form>
+      </div>
+    </main>
+
+     <!-- this is footer section -->
+     <footer>
+        <div class="mt-20 bg-gray-900 py-20 flex justify-center items-center">
+           <div>
+            <h1 class="text-red-500 text-3xl text-center">My Recipe App</h1>
+            <p class="text-white text-center py-2">All rights received © </p>
+           </div>
+        </div>
+    </footer>
+  </body>
+</html>
