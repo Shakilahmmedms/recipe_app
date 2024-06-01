@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Recipes</title>
+    <!-- this fontawesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- this is daisyUI cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@1.14.0/dist/full.css"
+      rel="stylesheet"
+    />
+
+
+    <!-- this is tailwind css CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="grid grid-cols-12">
+        <div id="sidebar" class="col-span-2 bg-gray-600 text-white min-h-screen">
+          <div class="px-6 py-12">
+            <ul class="space-y-2">
+              <li class="btn text-white px-3 py-3">
+                <a href="dashboard.html"><i class="fa-solid fa-user px-2"></i> Profile</a>
+              </li>
+              <li class="btn text-white px-3 py-3">
+                <a href="my_recipe.html"
+                  ><i class="fa-solid fa-utensils px-2"></i> My Recipe</a
+                >
+              </li>
+              <li class="btn text-white px-3 py-3">
+                <a href="add_recipe.html">
+                  <i class="fa-solid fa-circle-plus px-2"></i> Add Recipe</a
+                >
+              </li>
+              <li class="btn text-white px-3 py-3">
+                <a href="index.html">
+                  <i class="fa-solid fa-house-chimney px-2"></i> Home</a
+                >
+              </li>
+              <li class="btn text-white px-3 py-3">
+                <a href="#"
+                  ><i class="fa-solid fa-right-from-bracket px-2"></i> Log Out</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <main class="col-span-10 min-h-screen w-full bg-gray-200">
+            <div>
+                <h1 class="text-3xl text-center mt-8 font-bold">My Recipes</h1>
+
+                <div class="my-12 px-12 flex flex-wrap gap-4 justify-between">
+                    <!-- card 1 -->
+                    <div class="card w-80 bg-base-100 shadow-xl">
+                        <figure><img src="https://img.freepik.com/free-photo/top-view-table-full-delicious-food-composition_23-2149141352.jpg?t=st=1717178077~exp=1717181677~hmac=85adf10a7aa76f82793e29d2a0d8e0574c8b89cd176c11e68e8aec6a0de53419&w=740" alt="Food" /></figure>
+                        <div class="card-body">
+                          <h2 class="card-title">
+                            Delicious Food!
+                            <div class="badge badge-secondary">NEW</div>
+                          </h2>
+                          <h2 class="text-md font-semibold">Rating: 4.5/5.00</h2>
+                          <p class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, corrupti!</p>
+                          <div class="card-actions justify-end">
+                            <button class="btn bg-red-600 text-white w-full">See Details</button>
+                          </div>
+                        </div>
+                      </div>
+
+                    <!-- card 2 -->
+                    <div class="card w-80 bg-base-100 shadow-xl">
+                        <figure><img src="https://img.freepik.com/free-photo/top-view-table-full-delicious-food-composition_23-2149141352.jpg?t=st=1717178077~exp=1717181677~hmac=85adf10a7aa76f82793e29d2a0d8e0574c8b89cd176c11e68e8aec6a0de53419&w=740" alt="Food" /></figure>
+                        <div class="card-body">
+                          <h2 class="card-title">
+                            Delicious Food!
+                            <div class="badge badge-secondary">NEW</div>
+                          </h2>
+                          <h2 class="text-md font-semibold">Rating: 4.5/5.00</h2>
+                          <p class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, corrupti!</p>
+                          <div class="card-actions justify-end">
+                            <button class="btn bg-red-600 text-white w-full">See Details</button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- card 3 -->
+                      <div class="card w-80 bg-base-100 shadow-xl">
+                        <figure><img src="https://img.freepik.com/free-photo/top-view-table-full-delicious-food-composition_23-2149141352.jpg?t=st=1717178077~exp=1717181677~hmac=85adf10a7aa76f82793e29d2a0d8e0574c8b89cd176c11e68e8aec6a0de53419&w=740" alt="Food" /></figure>
+                        <div class="card-body">
+                          <h2 class="card-title">
+                            Delicious Food!
+                            <div class="badge badge-secondary">NEW</div>
+                          </h2>
+                          <h2 class="text-md font-semibold">Rating: 4.5/5.00</h2>
+                          <p class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, corrupti!</p>
+                          <div class="card-actions justify-end">
+                            <button class="btn bg-red-600 text-white w-full">See Details</button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- card 4 -->
+                      <div class="card w-80 bg-base-100 shadow-xl">
+                        <figure><img src="https://img.freepik.com/free-photo/top-view-table-full-delicious-food-composition_23-2149141352.jpg?t=st=1717178077~exp=1717181677~hmac=85adf10a7aa76f82793e29d2a0d8e0574c8b89cd176c11e68e8aec6a0de53419&w=740" alt="Food" /></figure>
+                        <div class="card-body">
+                          <h2 class="card-title">
+                            Delicious Food!
+                            <div class="badge badge-secondary">NEW</div>
+                          </h2>
+                          <h2 class="text-md font-semibold">Rating: 4.5/5.00</h2>
+                          <p class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, corrupti!</p>
+                          <div class="card-actions justify-end">
+                            <button class="btn bg-red-600 text-white w-full">See Details</button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- card 5 -->
+                      <div class="card w-80 bg-base-100 shadow-xl">
+                        <figure><img src="https://img.freepik.com/free-photo/top-view-table-full-delicious-food-composition_23-2149141352.jpg?t=st=1717178077~exp=1717181677~hmac=85adf10a7aa76f82793e29d2a0d8e0574c8b89cd176c11e68e8aec6a0de53419&w=740" alt="Food" /></figure>
+                        <div class="card-body">
+                          <h2 class="card-title">
+                            Delicious Food!
+                            <div class="badge badge-secondary">NEW</div>
+                          </h2>
+                          <h2 class="text-md font-semibold">Rating: 4.5/5.00</h2>
+                          <p class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, corrupti!</p>
+                          <div class="card-actions justify-end">
+                            <button class="btn bg-red-600 text-white w-full">See Details</button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- card 6 -->
+                      <div class="card w-80 bg-base-100 shadow-xl">
+                        <figure><img src="https://img.freepik.com/free-photo/top-view-table-full-delicious-food-composition_23-2149141352.jpg?t=st=1717178077~exp=1717181677~hmac=85adf10a7aa76f82793e29d2a0d8e0574c8b89cd176c11e68e8aec6a0de53419&w=740" alt="Food" /></figure>
+                        <div class="card-body">
+                          <h2 class="card-title">
+                            Delicious Food!
+                            <div class="badge badge-secondary">NEW</div>
+                          </h2>
+                          <h2 class="text-md font-semibold">Rating: 4.5/5.00</h2>
+                          <p class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, corrupti!</p>
+                          <div class="card-actions justify-end">
+                            <button class="btn bg-red-600 text-white w-full">See Details</button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- card 7 -->
+                      <div class="card w-80 bg-base-100 shadow-xl">
+                        <figure><img src="https://img.freepik.com/free-photo/top-view-table-full-delicious-food-composition_23-2149141352.jpg?t=st=1717178077~exp=1717181677~hmac=85adf10a7aa76f82793e29d2a0d8e0574c8b89cd176c11e68e8aec6a0de53419&w=740" alt="Food" /></figure>
+                        <div class="card-body">
+                          <h2 class="card-title">
+                            Delicious Food!
+                            <div class="badge badge-secondary">NEW</div>
+                          </h2>
+                          <h2 class="text-md font-semibold">Rating: 4.5/5.00</h2>
+                          <p class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, corrupti!</p>
+                          <div class="card-actions justify-end">
+                            <button class="btn bg-red-600 text-white w-full">See Details</button>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+</body>
+</html>

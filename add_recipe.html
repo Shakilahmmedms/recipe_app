@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Recipe</title>
+    <!-- this fontawesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- this is daisyUI cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@1.14.0/dist/full.css"
+      rel="stylesheet"
+    />
+
+
+    <!-- this is tailwind css CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="grid grid-cols-12">
+        <div id="sidebar" class="col-span-2 bg-gray-600 text-white min-h-screen">
+          <div class="px-6 py-12">
+            <ul class="space-y-2">
+              <li class="btn text-white px-3 py-3">
+                <a href="dashboard.html"><i class="fa-solid fa-user px-2"></i> Profile</a>
+              </li>
+              <li class="btn text-white px-3 py-3">
+                <a href="my_recipe.html"
+                  ><i class="fa-solid fa-utensils px-2"></i> My Recipe</a
+                >
+              </li>
+              <li class="btn text-white px-3 py-3">
+                <a href="add_recipe.html">
+                  <i class="fa-solid fa-circle-plus px-2"></i> Add Recipe</a
+                >
+              </li>
+              <li class="btn text-white px-3 py-3">
+                <a href="index.html">
+                  <i class="fa-solid fa-house-chimney px-2"></i> Home</a
+                >
+              </li>
+              <li class="btn text-white px-3 py-3">
+                <a href="#"
+                  ><i class="fa-solid fa-right-from-bracket px-2"></i> Log Out</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <main class="col-span-10 min-h-screen w-full bg-gray-200">
+          <div>
+            <h1 class="text-3xl font-bold text-center my-12">Add A New Recipe</h1>
+
+            <div class="px-12 ">
+                <div class="">
+                    <label class="form-control w-full">
+                      <div class="label">
+                        <span class="label-text">Recipe Name: </span>
+                      </div>
+                      <input
+                        type="text"
+                        placeholder="Recipe Title"
+                        class="input input-bordered w-full border-1 border-black"
+                        
+                      />
+                    </label>
+                
+                  </div>
+
+                <div class="flex gap-2">
+                    <div class="w-full">
+                        <label class="form-control  my-4">
+                            <div class="label">
+                              <span class="label-text">Pick the Region</span>
+                            </div>
+                            <select class="select select-bordered border-1 border-black">
+                              <option disabled selected>Pick one</option>
+                              <option>Bangnladesh</option>
+                              <option>Iran</option>
+                              <option>Japan</option>
+                              <option>Planet of the Apes</option>
+                              <option>Star Trek</option>
+                            </select>
+                            
+                          </label>
+                      </div>
+                      <div class="w-full">
+                        <label class="form-control  my-4">
+                            <div class="label">
+                              <span class="label-text">Pick the Category</span>
+                            </div>
+                            <select class="select select-bordered border-1 border-black">
+                              <option disabled selected>Pick one</option>
+                              <option>Delicious</option>
+                              <option>Spicy</option>
+                              <option>Lord of the Rings</option>
+                              <option>Planet of the Apes</option>
+                              <option>Star Trek</option>
+                            </select>
+                            
+                          </label>
+                      </div>
+                </div>
+                <!-- Description -->
+                <div>
+                    <div>
+                        <label class="form-control">
+                          <div class="label">
+                            <span class="label-text">Description</span>
+                          </div>
+                          <textarea class="textarea textarea-bordered h-24 border-1 border-black" placeholder="Your Address">Description
+                          </textarea>
+                          
+                        </label>
+                      </div>
+                </div>
+                <div class="mt-6">
+                    <button class="btn bg-red-600 w-full">Add Recipe</button>
+                </div>
+            </div>
+          </div>
+        </main>
+      </div>
+</body>
+</html>
